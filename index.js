@@ -5,6 +5,7 @@ const app = express();
 // Add support to parse json in the body
 app.use(express.json());
 
+// Use the recipe routes
 let recipeRoutes = require('./routes/recipe');
 app.use(recipeRoutes);
 
